@@ -30,7 +30,7 @@ class WiFiMonitorMenu:
         os.system('clear' if os.name == 'posix' else 'cls')
     
     def show_header(self):
-        print("🌐 WiFi Speed Monitor")
+        print("🌐 wifi")
         print("=" * 50)
     
     def show_current_plan(self):
@@ -45,7 +45,7 @@ class WiFiMonitorMenu:
         if self.fzf:
             try:
                 options = [f"{option[0]}" for option in self.menu_options]
-                selected = self.fzf.prompt(options, '--header="🌐 WiFi Speed Monitor - Select an option:"')[0]
+                selected = self.fzf.prompt(options, '--header="🌐 wifi - Select an option:"')[0]
                 
                 for i, (option_text, _) in enumerate(self.menu_options):
                     if option_text == selected:

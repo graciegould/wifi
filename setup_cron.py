@@ -12,7 +12,7 @@ def setup_cron_job():
     
     cron_command = f"*/10 * * * * cd {script_dir} && {python_path} {script_path} >> {log_path} 2>&1"
     
-    print("Setting up cron job for WiFi speed monitoring...")
+    print("Setting up cron job for wifi monitoring...")
     print(f"Script location: {script_path}")
     print(f"Python path: {python_path}")
     print(f"Log file: {log_path}")

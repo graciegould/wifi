@@ -8,7 +8,7 @@ def read_long_description():
         with open("README.md", "r", encoding="utf-8", errors="ignore") as fh:
             return fh.read()
     except (FileNotFoundError, UnicodeDecodeError):
-        return "WiFi Speed Monitor - Automatic internet speed monitoring and analysis"
+        return "wifi - Automatic wifi monitoring and analysis"
 
 # Read requirements from requirements.txt
 def read_requirements():
@@ -25,14 +25,14 @@ def read_requirements():
         ]
 
 setup(
-    name="wifi-speed-monitor",
+    name="wifi",
     version="1.0.0",
-    author="WiFi Monitor User",
+    author="Gracie Gould",
     author_email="user@example.com",
-    description="Automatic WiFi speed monitoring with cron scheduling and data analysis",
+    description="Automatic wifi monitoring with cron scheduling and data analysis",
     long_description=read_long_description(),
     long_description_content_type="text/markdown",
-    url="https://github.com/username/wifi-speed-monitor",
+    url="https://github.com/username/wifi",
     packages=find_packages(),
     py_modules=[
         "database",
@@ -90,8 +90,8 @@ setup(
         "fzf": ["pyfzf>=0.3.1"],
     },
     project_urls={
-        "Bug Reports": "https://github.com/username/wifi-speed-monitor/issues",
-        "Source": "https://github.com/username/wifi-speed-monitor/",
+        "Bug Reports": "https://github.com/username/wifi/issues",
+        "Source": "https://github.com/username/wifi/",
     },
     include_package_data=True,
     package_data={

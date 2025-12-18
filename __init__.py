@@ -1,8 +1,9 @@
-"""
-WiFi Speed Monitor
-==================
 
-A comprehensive WiFi speed monitoring system with automatic scheduling,
+"""
+wifi
+====
+
+A comprehensive wifi monitoring system with automatic scheduling,
 data analysis, and performance tracking.
 
 Features:
