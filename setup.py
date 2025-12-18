@@ -41,6 +41,7 @@ setup(
         "daily_rollup",
         "set_interval",
         "set_plan",
+        "clear_plan",
         "setup_cron",
         "cleanup",
         "view_results",

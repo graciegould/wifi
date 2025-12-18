@@ -130,6 +130,16 @@ class WiFiSpeedDB:
         conn.close()
         return result
     
+    def clear_current_plan(self):
+        """Clear the current active internet plan"""
+        conn = sqlite3.connect(self.db_path)
+        cursor = conn.cursor()
+        
+        cursor.execute('UPDATE plan_speeds SET is_active = 0')
+        
+        conn.commit()
+        conn.close()
+    
     def get_speed_test_with_plan_comparison(self, limit=10):
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
