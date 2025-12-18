@@ -2,8 +2,8 @@
 
 # wifi
 
-
-WiFi is a comprehensive CLI tool for monitoring your internet speed, tracking device activity, and analyzing performance trends. It features an interactive menu, automatic scheduling, and robust data management.
+I designed this tool so that xfinity could stop ripping me off on my wifi plans. 
+Customize your plan, interval checks, and data retention to monitor your internet speed, tracking device activity, and analyzing performance trends. It features an interactive menu, automatic scheduling, and robust data management.
 
 
 ## Features
