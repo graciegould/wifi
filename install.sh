@@ -1,6 +1,11 @@
 #!/bin/bash
 # install.sh - Install wifi CLI globally for your user
 
+# Always install dependencies locally for the project
+echo "Installing Python dependencies from requirements.txt..."
+$PIP_CMD install --upgrade pip
+$PIP_CMD install -r requirements.txt
+
 set -e
 
 
